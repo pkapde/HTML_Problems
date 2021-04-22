@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang ="en">
+    <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../assets/fav.png">
+    <title>Demo Layout</title>
+        <style>
+        * {
+            box-sizing: border-box; 
+        }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: row;
+            margin: 0;
+        }
+        .outer-col-1 {
+            background: #D7E8D4;
+            flex: 1;
+        }
+        .mainContentItem{
+                text-align: left;
+                background: rgb(46, 114, 148);
+        }
+        .outer-col-2 {
+            display: flex;
+            flex-direction: column;
+            flex: 5;
+        }
+        .inner-row {
+            display: flex;
+            flex-direction: row;
+        }
+        .inner-col {
+            flex: 4;
+        }
+        .inner-row article {
+            min-height: 0;
+        }
+        .inner-row sideBar {
+            background: beige;
+            flex: 1;
+        }
+        header, .footerContainer {
+            background: yellowgreen;
+            height: 18vh;
+        }
+        header, .footerContainer, nav, sideBar {
+            padding: 2em;
+        }
+        </style>    
+    </head>
+<body>
+  <sideBar class="outer-col-1">Left Side Bar</sideBar>
+  <div class="outer-col-2">
+  	<header><h3>HEADER - Sample Layout Example</h3></header>
+    <div class="inner-row">
+      <div class="inner-col">
+        <section class="mainContentItem">
+    	<article>
+            <h2>First article</h2>
+            <p>
+                In a good news for millions of devotees of Sri Venkateswara Swamy, 
+                the temple management of Tirumala Tirupati Devasthanams (TTD) will reopen the doors for darshan of Sri Venkateswara Swamy from Monday (June 8). 
+                It may be recalled that the temple, which is visited by millions of people every year, was closed around 80 days ago due to coronavirus COVID-19 pandemic. 
+            </p>
+        </article>
+        <article>
+            <h2>Second article</h2>
+            <p>
+                In a good news for millions of devotees of Sri Venkateswara Swamy, 
+                the temple management of Tirumala Tirupati Devasthanams (TTD) will reopen the doors for darshan of Sri Venkateswara Swamy from Monday (June 8). 
+                It may be recalled that the temple, which is visited by millions of people every year, was closed around 80 days ago due to coronavirus COVID-19 pandemic. 
+            </p>
+        </article>
+        <article>
+            <h2>Third article</h2>
+            <p>
+                In a good news for millions of devotees of Sri Venkateswara Swamy, 
+                the temple management of Tirumala Tirupati Devasthanams (TTD) will reopen the doors for darshan of Sri Venkateswara Swamy from Monday (June 8). 
+                It may be recalled that the temple, which is visited by millions of people every year, was closed around 80 days ago due to coronavirus COVID-19 pandemic. 
+            </p>
+        </article>
+        </section>
+        <footer class="footerContainer">Footer</footer>
+      </div>
+    <sideBar>RightSideBar</sideBar>
+    </div>
+  </div>
+</body>
